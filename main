@@ -29,5 +29,4 @@ while 1 == 1:
 		        server.sendmail(sender_email, receiver_email, message)
     except:
         print("site is down\n")
-            # TODO: Send email here
     time.sleep(240)
