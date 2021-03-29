@@ -18,8 +18,9 @@ while 1 == 1:
 	        print("Maybe vaccines")
 	        port = 465  # For SSL
 	        password = 'password'
-	        sender_email = "emailhere@email.com"  # Enter your address
-	        receiver_email = "emailhere@email.com"  # Enter receiver address
+	        sender_email = "emailhere@gmail.com"  # Enter your address
+	        receiver_email = "emailhere@gmail.com"  # Enter receiver address
+		#note that gmail appears to block smtp email hyperlinks
 	        message = "Check Publix health vaccine site now"
 	        # Create a secure SSL context
 	        context = ssl.create_default_context()
