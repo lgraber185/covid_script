@@ -5,14 +5,14 @@ import time
 
 while 1 == 1:
     try:	
-        page = requests.get('https://www.publix.com/covid-vaccine/florida')
+        page = requests.get('https://www.publix.com/covid-vaccine/florida') # put site url here
         tree = html.fromstring(page.content)
 
         content = page.content
 
         #Vaccine Registration is Currently Full
 
-        if 'All available COVID-19 vaccine appointments have been claimed' in page.text:
+        if 'All available COVID-19 vaccine appointments have been claimed' in page.text: # put placeholder text here
             print("No vaccines yet")
         else:
 	        print("Maybe vaccines")
