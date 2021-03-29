@@ -3,7 +3,7 @@ import requests
 import smtplib, ssl
 import time
 
-while 1 == 1:
+while 1 == 1: # intentional loop
     try:	
         page = requests.get('https://www.publix.com/covid-vaccine/florida') # put site url here or use a config file
         tree = html.fromstring(page.content)
@@ -27,4 +27,4 @@ while 1 == 1:
 		        server.sendmail(sender_email, receiver_email, message)
     except:
         print("site is down\n")
-    time.sleep(240)
+    time.sleep(240) #sleep between iterations
