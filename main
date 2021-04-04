@@ -5,7 +5,7 @@ import time
 
 while 1 == 1: # intentional loop
     try:	
-        page = requests.get('https://www.publix.com/covid-vaccine/florida') # put site url here or use a config file
+        page = requests.get('https://www.vaccineurl.com') # put site url here or use a config file
         tree = html.fromstring(page.content)
 
         content = page.content
