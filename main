@@ -10,7 +10,7 @@ while 1 == 1: # intentional loop
 
         content = page.content
 
-        if 'All available COVID-19 vaccine appointments have been claimed' in page.text: # put placeholder text here or use a config file
+        if 'No Appointments available' in page.text: # put placeholder text here or use a config file
             print("No vaccines yet")
         else:
 	        print("Maybe vaccines")
